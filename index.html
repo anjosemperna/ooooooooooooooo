@@ -3,16 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <style>
-        div{
-            color: blueviolet;
+        body{
+            text-align: center;
+        }
+        button{
+            border-color:#f61f0e;
+            background:linear-gradient(to bottom, #fca8a1 5%, #f61f0e 100%);
+            box-shadow:inset 0px 1px 0px 0px #fff4f3;
+            color:#fff;
+            text-shadow:0px 1px 0px #528009;
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        ...
-      </div>
+    <form action="" method="post">
+        <fieldset>
+             <legend>indentificação</legend>
+            <p>
+                <label for="nome">nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome competo" maxlength="300">
+            </p>
+
+            <p>
+                <label for="numero">Telefone:</label>
+                <input type="numero" placeholder="Telefone" maxlength="12"/>
+            </p>
+
+            <p>
+
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+
+            </p>
+
+            <p>
+
+                <label for="password">Senha:</label>
+                <input type="password" placeholder="Digite sua senha" maxlength="8" minlength="2"/>
+               <br> <a href="esqueceusenha.html">esqueceu a senha</a>
+
+            </p>
+
+            <P>SEXO: </P>
+
+            <p>
+                <input type="radio" name="sexo" id="MASCULNO">
+                <label for="MASCULNO">MASCULNO</label>
+
+                <input type="radio" name="sexo" id="FEMININO">
+                <label for="FEMININO">FEMININO</label>
+
+            </p>
+
+            <p>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" />
+            </p>
+        </fieldset>
+    </form>
+        <fieldset>
+            <legend>Endereço</legend>
+         <P>
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" placeholder="digite o nome da rua" maxlength="300">
+        </P>
+        <p>
+            <label for="numero">Numero:</label>
+            <input type="number" id="numero" placeholder="numero da casa" minlength="0" maxlength="9999">
+        </p>
+        <p>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" placeholder="Bairro" maxlength="100">
+        </p>
+        <p>
+            <label for="estado">estado:</label>
+            <select id="estado">
+                <optgroup label="Região sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do sul</option>
+
+                </optgroup>
+                <optgroup label="Região Norte">
+                    <option value="f">Amazonas</option>
+                    <option value="f">Pará</option>
+                    <option value="f"> Acre</option>
+                    <option value="ff">Amapá</option>
+                    <option value="f">Tocantins</option>
+                    <option value="f">Roraima</option>
+                    <option value="f">Rondônia</option>
+                    
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="f">Maranhão</option>
+                    <option value="f">Piauí </option>
+                    <option value="f">Rio Grande do Norte</option>
+                    <option value="f">Paraíba</option>
+                    <option value="f">Pernambuco </option>
+                    <option value="f">Alagoas</option>
+                    <option value="f">Sergipe </option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="e">Goiás</option>
+                    <option value="e">Mato Grosso </option>
+                    <option value="e">Mato Grosso do Su</option>
+                    <option value="e">Distrito Federal</option>
+                </optgroup>
+            </select>
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>entrar</legend>
+            <br><a href="entrada.html"><button>se cadastrar</button></a>
+        </fieldset>
 </body>
 </html>
